@@ -4,7 +4,7 @@ use App\Connection;
 
 
 $pdo = (new Connection())->getPdo();
-dd($pdo);
+//dd($pdo);
 
     $name = $_POST["name"];
     $first_name = $_POST["first_name"];
@@ -12,7 +12,7 @@ dd($pdo);
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $sql = "INSERT INTO user (name,first_name ,pseudo ,email , password ) 
+    $sql = "INSERT INTO user (name ,first_name ,pseudo ,email , password ) 
     VALUES 
     ($name, $first_name, $pseudo, $email, $password)";
 

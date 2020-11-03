@@ -11,3 +11,7 @@ PRIMARY KEY (`id`)) ENGINE = InnoDB;
 //ajout colonne mot de passe :
 
 ALTER TABLE `user` ADD `password` VARCHAR(255) NOT NULL AFTER `status`;
+
+//rename de la bdd de projet-explorer à projectExplorer
+
+CREATE DATABASE projectexplorer / DROP DATABASE projet-explorer;
