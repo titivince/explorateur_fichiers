@@ -7,3 +7,7 @@ CREATE TABLE `projet-explorer`.`user` ( `id` INT(100) NOT NULL AUTO_INCREMENT ,
 `date_subscribe` DATETIME NOT NULL ,
 `status` TEXT NOT NULL ,
 PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+//ajout colonne mot de passe :
+
+ALTER TABLE `user` ADD `password` VARCHAR(255) NOT NULL AFTER `status`;
