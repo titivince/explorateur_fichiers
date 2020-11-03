@@ -1,8 +1,10 @@
 <?php
 
-session_start();
+use App\Connection;
 
-require_once('../assets/pdo.php');
+
+$pdo = (new Connection())->getPdo();
+dd($pdo);
 
     $name = $_POST["name"];
     $first_name = $_POST["first_name"];
@@ -10,13 +12,13 @@ require_once('../assets/pdo.php');
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $sql = "INSERT INTO user (name,first_name ,pseudo ,email , password, date_suscribe ) 
+    $sql = "INSERT INTO user (name,first_name ,pseudo ,email , password ) 
     VALUES 
-    ('$name', '$first_name', '$pseudo', '$email','$password', NOW())";
+    ($name, $first_name, $pseudo, $email, $password)";
 
     $pdo -> exec($sql);
 
-require ('../assets/close.php');
+
 
 ?>
 
@@ -25,7 +27,7 @@ require ('../assets/close.php');
 <head>
     <meta charset="utf-8">
     <title>Inscription</title>
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
