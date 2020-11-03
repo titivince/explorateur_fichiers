@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="FR-fr">
-<head>
-        <meta charset="utf-8">
-        <title>Explorateur de fichier</title>
-        <link rel="stylesheet" href="/src/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-</head>
-<body>
-    
-    <div class="header">
-        <h2 class="logo">Les Codeur du Dimanche</h2>
-        <input type="checkbox" id="chk">
-        <label for="chk" class="show-menu-btn">
-          <i class="fas fa-ellipsis-h"></i>
-        </label>
-    
-        <ul class="menu">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <label for="chk" class="hide-menu-btn">
-            <i class="fas fa-times"></i>
-          </label>
-        </ul>
-      </div>
 
+<head>
+    <meta charset="utf-8">
+    <title>Explorateur de fichier</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="logo">CodingNepal</li>
+                <li class="search-icon">
+                    <input type="search" placeholder="Search">
+                    <label class="icon">
+                        <span class="fas fa-search"></span>
+                    </label>
+                </li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <script>
+        $('nav ul li.btn span').click(function(){
+          $('nav ul div.items').toggleClass("show");
+          $('nav ul li.btn span').toggleClass("show");
+        });
+      </script>
 </body>
+
 </html>
