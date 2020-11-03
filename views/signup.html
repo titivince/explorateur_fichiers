@@ -17,8 +17,12 @@
 
         <h1>Inscription</h1>
         <!-- Changer le name pour la BDD -->
-        <input type="text" name="" placeholder="Nom d'utilisateur">
-        <input type="password" name="" placeholder="Mot de passe">
+        <input type="text" name="name" minlength="2" placeholder="Nom" required>
+        <input type="text" name="first_name" minlength="2" placeholder="Prénom" required>
+        <input type="text" name="pseudo" minlength="2" placeholder="Pseudo" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
+        
         <input type="submit" name="" value="S'inscrire">
 
         <a class="signin" href="signin.html" >Se connecter</a>
