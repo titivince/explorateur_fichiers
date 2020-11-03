@@ -17,25 +17,6 @@ require_once('../assets/pdo.php');
 require ('../assets/close.php');
 
 ?>
-<form method="POST">
-
-    <p>Votre Nom :</p>
-    <input type="text" name="name" minlength="2" required>
-
-    <p>Votre Prémon :</p>
-    <input type="text" name="first_name" minlength="2" required>
-
-    <p>Votre pseudo :</p>
-    <input type="text" name="pseudo" minlength="2" required>
-
-    <p>Votre mail :</p>
-    <input type="email" name="email" required>
-
-    <p>Mot de passe :</p>
-    <input type="password" name="password" minlength="8" required>
-
-
-</form>
 
 <!DOCTYPE html>
 <html lang="FR-fr">
@@ -68,4 +49,4 @@ require ('../assets/close.php');
 </form>
 
 </body>
-</html>tml>
+</html>
