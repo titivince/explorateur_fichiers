@@ -10,9 +10,9 @@ require_once('../assets/pdo.php');
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $sql = "INSERT INTO user (name ,first_name ,pseudo ,email , password ) 
+    $sql = "INSERT INTO user (name,first_name ,pseudo ,email , password, date_suscribe ) 
     VALUES 
-    ('$name', '$first_name', '$pseudo', '$email','$password')";
+    ('$name', '$first_name', '$pseudo', '$email','$password', NOW())";
 
     $pdo -> exec($sql);
 

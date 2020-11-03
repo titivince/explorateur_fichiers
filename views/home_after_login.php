@@ -1,6 +1,6 @@
 <?php
 //navbar
-include nav.php;
+require VIEW_PATCH.'../assets/nav.php';  /*avec le view_patch*/
 //corps de page
 include home.php;
 //footer
