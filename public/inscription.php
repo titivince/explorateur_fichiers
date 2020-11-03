@@ -7,12 +7,14 @@ require_once('../assets/pdo.php');
     $name = $_POST["name"];
     $first_name = $_POST["first_name"];
     $pseudo = $_POST["pseudo"];
-    $mail = $_POST["mail"];
+    $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $sql = "INSERT INTO user (name ,first_name ,pseudo ,mail , password ) 
+    $sql = "INSERT INTO user (name ,first_name ,pseudo ,email , password ) 
     VALUES 
-    ('$name', '$first_name', '$pseudo', '$mail','$password')";
+    ('$name', '$first_name', '$pseudo', '$email','$password')";
+
+    $pdo -> exec($sql);
 
 require ('../assets/close.php');
 
@@ -29,7 +31,7 @@ require ('../assets/close.php');
 </head>
 <body>
 
-<form class="box" action="signin.html" method="POST">
+<form class="box" method="POST">
 
     <!-- Crée un compte Admin + User et indiquer ici les logs -->
     <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
