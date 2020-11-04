@@ -52,7 +52,7 @@ if (isset($_POST)) {
     <input type="email" name="email" placeholder="E-mail" required>
     <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
 
-    <input type="submit" name="S'inscrire" value="S'inscrire">
+    <input type="submit" name="" value="S'inscrire">
 
     <a class="signin" href="login.php" >Se connecter</a>
 

@@ -25,7 +25,7 @@ $req->execute();
     <meta charset="utf-8">
     <META http-equiv="refresh" content="3; URL=http://localhost/explorateur_fichiers/src/explorateur.php">
     <title>Titre de la page</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body>

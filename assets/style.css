@@ -306,6 +306,8 @@ nav ul li.btn span.show:before {
 /* nouveaux css */
 
 table {
+    margin-top: 3em;
+    width: 75%;
     border-collapse: collapse;
     border: black solid 1px;
     position: absolute;
@@ -317,10 +319,11 @@ table {
 }
 
 td, th {
-    padding: 2em;
+    padding: 1em;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     border: black solid 1px;
+    box-shadow: 0 0 0.2em rgb(255, 255, 255);
 }
 
 th {
@@ -329,3 +332,4 @@ th {
 }
 
 /* fin css */
+

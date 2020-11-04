@@ -49,6 +49,8 @@ $user = $query->fetchAll();
 
         </div>
     <?php endforeach ?>
+
+    <?= require ('../views/block/footer.php') ?>
     
 </body>
 </html>
