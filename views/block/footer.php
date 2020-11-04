@@ -24,7 +24,7 @@
             <div class="card-header">
                 En collaboration avec
             </div>
-        <h5 class="card-title">2020 &#169; Les Codeur du Dimanche </h5>
+        <h5 class="card-title">2020 &#169; Les Codeurs du Dimanche </h5>
         <p class="card-text">Explorateur de fichier HTML CSS JavaScript PHP MySql</p>
     </div>
 </div>

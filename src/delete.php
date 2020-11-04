@@ -59,6 +59,8 @@ $req->execute();
         </script>
     </h2>
 
+    <?php require('../views/block/footer.php'); ?>
+
 </body>
 
 </html>

@@ -26,10 +26,10 @@ $user = $query->fetchAll();
 <table class="table">
 
     <tr>
-        <th>Nom du fichier</th>
-        <th>Taille du fichier</th>
-        <th>Ajouter le</th>
-        <th>Actions</th>
+        <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Nom du fichier</th>
+        <th><span class="icon"><img src="../assets/icon/collapse-arrow-48.png" alt=""></span>Taille du fichier</th>
+        <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Ajouter le</th>
+        <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Actions</th>
     </tr>
 
 

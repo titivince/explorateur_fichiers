@@ -22,15 +22,7 @@
     <br>
     <a href="login.php">Page Login</a>
     <br>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    </h1>
+
     
 </body>
 </html>
