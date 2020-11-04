@@ -6,6 +6,7 @@ use App\Connection;
 $pdo = (new Connection())->getPdo();
 
 //dd($pdo);
+
 if (isset($_POST['inscrire'])) {
 
 
@@ -52,9 +53,9 @@ if (isset($_POST['inscrire'])) {
     <input type="email" name="email" placeholder="E-mail" required>
     <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
 
-    <input type="submit" name="S'inscrire" value="inscrire">
+    <button class="signup" type="submit" name="" value="inscrire">s'inscrire</button>
 
-    <a class="signin" href="signin.html" >Se connecter</a>
+    <a class="signin" href="login.php" >Se connecter</a>
 
 </form>
 
