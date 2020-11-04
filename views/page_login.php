@@ -1,7 +1,7 @@
 <?php
 //navbar
-include nav.php;
+require './block/nav.php';
 //corps de page
-include signin.php;
+require "../src/login.php";
 //footer
-include footer.php;
+//include footer.php;

@@ -1,11 +1,11 @@
 <?php
-require_once('Connection.php');
+namespace App;
 
 use App\Connection;
 
 $pdo = (new Connection())->getPdo();
 
-//dd($pdo);
+dd($pdo);
 
 if (isset($_POST)) {
 
