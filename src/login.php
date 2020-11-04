@@ -50,7 +50,7 @@ if($passwordCorrect == true){
     <input type="password" name="password" placeholder="Mot de passe">
     <input type="submit" name="submit" value="Connexion">
 
-    <a class="signup" href="signup.html" >Crée un compte</a>
+    <a class="signup" href="inscription.php" >Crée un compte</a>
 
 </form>
 
