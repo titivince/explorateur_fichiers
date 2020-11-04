@@ -26,24 +26,33 @@ if($passwordCorrect == true){
 }
 
 ?>
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>Connection</title>
-    </head>
-    <body>
-    <form method="POST">
 
-        <input name="pseudo" required>
+<!DOCTYPE html>
+<html lang="FR-fr">
+<head>
+    <meta charset="utf-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+<body>
 
-        <input name="password" required>
+<form class="box" action="signin.html" method="POST">
 
-        <input type="submit">
-    </form>
+    <!-- Crée un compte Admin + User et indiquer ici les logs -->
+    <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
+    <p>Commentaire dans le code sources à modifier !</p>
 
-    </body>
+    <h1>Connexion</h1>
+    <!-- Changer le name pour la BDD -->
+    <input type="text" name="pseudo" placeholder="Pseudo">
+    <input type="password" name="password" placeholder="Mot de passe">
+    <input type="submit" name="submit" value="Connexion">
+
+    <a class="signup" href="signup.html" >Crée un compte</a>
+
+</form>
+
+</body>
 </html>
-
