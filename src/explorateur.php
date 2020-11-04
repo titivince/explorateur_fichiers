@@ -26,13 +26,10 @@ $user = $query->fetchAll();
 <table class="table">
 
     <tr>
-        <th>Prénom</th>
-        <th>Nom</th>
-        <th>Pseudo</th>
-        <th>E-Mail</th>
-        <th>Date d'inscription</th>
-        <th>Status</th>
-        <th>Mot de passe</th>
+        <th>Nom du fichier</th>
+        <th>Taille du fichier</th>
+        <th>Ajouter le</th>
+        <th>Actions</th>
     </tr>
 
 
@@ -44,10 +41,9 @@ $user = $query->fetchAll();
                 <td><?php echo  $item["name"] ?></td>
                 <td><?php echo  $item["first_name"] ?></td>
                 <td><?php echo  $item["pseudo"] ?></td>
-                <td><?php echo  $item["email"] ?></td>
-                <td><?php echo  $item["date_subscribe"] ?></td>
-                <td><?php echo  $item["status"] ?></td>
-                <td><?php echo  $item["password"] ?></td>
+                <td><a class="delete" href="delete.php?lign_delete=<?= intval($item['id']) ?>">Supprimer</a>
+                    <a  class="update" href="form_of_modif.php?ligne_update=<?= intval($item['id']) ?> ">modifier</a>
+                </td>
 
             </tr>
 
