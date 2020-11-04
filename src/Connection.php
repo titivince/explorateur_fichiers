@@ -1,10 +1,7 @@
 <?php
 
 
-
-
 namespace App;
-
 
 use PDO;
 
@@ -17,5 +14,3 @@ public function getPdo() {
 
 }
 }
-
-

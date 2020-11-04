@@ -61,6 +61,11 @@ nav ul div.items select {
 }
 
 nav ul div.items select:hover {
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+}
+
+.deconnexion {
     color: red;
 }
 
