@@ -5,8 +5,14 @@
     color: #f2f2f2;
 }
 
-body {
+body, html {
     background-color: #202020;
+}
+
+.main-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* DEBUT DU CSS POUR LA NAVBAR */
@@ -303,10 +309,9 @@ nav ul li.btn span.show:before {
 
 /* FIN DU CSS POUR LA PAGE LOGIN / INSCRIPTION */
 
-/* nouveaux css */
+/* DEBUT DU CSS POUR EXPLORATEUR */
 
 table {
-    margin-top: 3em;
     width: 75%;
     border-collapse: collapse;
     border: black solid 1px;
@@ -331,5 +336,26 @@ th {
     font-size: large;
 }
 
-/* fin css */
+/* FIN DU CSS POUR EXPLORATEUR */
 
+/* DEBUT CSS POUR FOOTER */
+
+footer {
+    position: relative;
+    min-height: 100%;
+    text-align: center;
+    background-color: #292929;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+.card-header{
+    padding-top: 5px;
+}
+
+.card-body, .card-title, .card-text, .btn, .btn-primary {
+    padding: 5px;
+}
+
+/* FIN DU CSS POUR FOOTER */
