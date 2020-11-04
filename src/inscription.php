@@ -1,10 +1,13 @@
 <?php
+require 'Connection.php';
 
 use App\Connection;
 
-
 $pdo = (new Connection())->getPdo();
+
 //dd($pdo);
+if (isset($_POST['inscrire'])) {
+
 
     $name = $_POST["name"];
     $first_name = $_POST["first_name"];
@@ -12,12 +15,15 @@ $pdo = (new Connection())->getPdo();
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $sql = "INSERT INTO user (name ,first_name ,pseudo ,email , password ) 
+
+    
+    $sql = 'INSERT INTO user (name ,first_name ,pseudo ,email , password )
     VALUES 
-    ($name, $first_name, $pseudo, $email, $password)";
+    ($name, $first_name, $pseudo, $email, $password)';
 
     $pdo -> exec($sql);
 
+}
 
 
 ?>
@@ -46,7 +52,7 @@ $pdo = (new Connection())->getPdo();
     <input type="email" name="email" placeholder="E-mail" required>
     <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
 
-    <input type="submit" name="" value="S'inscrire">
+    <input type="submit" name="S'inscrire" value="inscrire">
 
     <a class="signin" href="signin.html" >Se connecter</a>
 
