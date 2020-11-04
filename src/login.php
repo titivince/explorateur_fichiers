@@ -1,29 +1,27 @@
 <?php
-require_once('Connection.php');
+
+require 'Connection.php';
 
 use App\Connection;
 
 $pdo = (new Connection())->getPdo();
 //dd($pdo);
 
-$req = $pdo->prepare('SELECT id, password FROM user WHERE pseudo = :pseudo');
-$req->execute(['pseudo' => $pseudo]);
+$req = $pdo->prepare('SELECT * FROM user');
+$req->execute();
 
-$resultat = $req->fetch();
+$resultat = $req->fetchAll();
 
-if($_POST['password'] == $resultat['pass']){
-    $passwordCorrect = true;
-    }else{
-        $passwordCorrect = false;
-}
+foreach ($resultat as $list ){
+    if($_GET['pseudo'] == $list['pseudo'] && $_GET['password'] == $list['password']){
 
-if($passwordCorrect == true){
-    session_start();
-    $_SESSION['id'] = $resultat['id'];
-    $_SESSION['pseudo'] = $pseudo;
-    echo 'Bienvenue '.$pseudo;
-    } else{
-        echo'pseudo ou mot de passe incorect';
+            session_start();
+            $_SESSION['id'] = $resultat['id'];
+
+            echo 'Bienvenue ';
+    }else {
+        echo'blabla';
+    }
 }
 
 ?>
@@ -39,7 +37,7 @@ if($passwordCorrect == true){
 </head>
 <body>
 
-<form class="box" action="signin.html" method="POST">
+<form class="box" method="GET">
 
     <!-- Crée un compte Admin + User et indiquer ici les logs -->
     <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
@@ -49,7 +47,7 @@ if($passwordCorrect == true){
     <!-- Changer le name pour la BDD -->
     <input type="text" name="pseudo" placeholder="Pseudo">
     <input type="password" name="password" placeholder="Mot de passe">
-    <input type="submit" name="submit" value="Connexion">
+    <input type="submit" value="Connexion">
 
     <a class="signup" href="inscription.php" >Crée un compte</a>
 
