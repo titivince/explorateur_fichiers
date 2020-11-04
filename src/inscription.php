@@ -5,7 +5,7 @@ use App\Connection;
 
 $pdo = (new Connection())->getPdo();
 
-dd($pdo);
+//dd($pdo);
 
 if (isset($_POST)) {
 

@@ -13,11 +13,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <title>Document</title>
 </head>
 <body>
-<?php require_once './views/block/nav.php'; ?>
-<?php require '../src/deconnection.php'; ?>
+<?php require ("../views/block/nav.php"); ?>
+<?php require ('../src/deconnection.php'); ?>
 
 </body>
 </html>
