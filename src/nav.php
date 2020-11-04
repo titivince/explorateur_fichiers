@@ -23,8 +23,8 @@
         <li class="logo">Les Codeur du Dimanche</li>
         <li class="btn"><span class="fas fa-bars"></span></li>
         <div class="items">
+            <li><a href="#">Explorateur</a></li>
             <li><a href="#">Upload</a></li>
-            <li><a href="#">New Item</a></li>
             <li>
                 <select size="1" onChange="location = this.options[this.selectedIndex].value;">
                     <option value="#">$Pseudo</option> <!-- Liens vers le profil -->
