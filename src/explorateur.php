@@ -1,7 +1,7 @@
 <?php
 
 require_once('Connection.php');
-require('nav.php');
+require('../views/block/nav.php');
 
 use App\Connection;
 
