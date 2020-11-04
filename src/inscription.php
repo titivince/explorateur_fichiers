@@ -1,6 +1,7 @@
 <?php
 
-namespace App;
+require_once('Connection.php');
+require('../views/block/nav.php');
 
 use App\Connection;
 
