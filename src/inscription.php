@@ -7,7 +7,7 @@ $pdo = (new Connection())->getPdo();
 
 //dd($pdo);
 
-if (isset($_POST["S'inscrire"])) {
+if (isset($_POST)) {
 
 
     $name = $_POST["name"];
