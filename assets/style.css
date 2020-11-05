@@ -367,8 +367,6 @@ footer {
     box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
-.card-header {}
-
 .card-body, .card-title, .card-text, .btn, .btn-primary {
     padding: 5px;
 }
