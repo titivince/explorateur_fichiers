@@ -7,9 +7,15 @@
 
 body, html {
     background-color: #202020;
+    overflow: scroll; 
 }
 
-.main-footer{
+::-webkit-scrollbar { 
+    width: 0px; 
+    background: transparent;
+} 
+
+.main-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -312,13 +318,9 @@ nav ul li.btn span.show:before {
 /* DEBUT DU CSS POUR EXPLORATEUR */
 
 table {
-    width: 75%;
+    width: 100%;
     border-collapse: collapse;
     border: black solid 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     background-color: #292929;
     box-shadow: 0 0 1em rgb(255, 255, 255);
 }
@@ -336,9 +338,20 @@ th {
     font-size: large;
 }
 
-.icon{
+.icon {
     vertical-align: middle;
     padding-right: 5px;
+}
+
+.explorateur {
+    width: 75%;
+    height: 600px;
+    overflow: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
 /* FIN DU CSS POUR EXPLORATEUR */
@@ -351,12 +364,11 @@ footer {
     text-align: center;
     background-color: #292929;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
-.card-header{
-    padding-top: 5px;
+.card-header {
 }
 
 .card-body, .card-title, .card-text, .btn, .btn-primary {
