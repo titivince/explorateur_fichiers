@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <?php include '../views/block/nav.php'; ?>
 
     <form class="box" method="GET" action="../src/login_success.php">
 
@@ -32,5 +33,5 @@
             echo $valid;
         }  ?>
 </body>
-
+    <?php include '../views/block/footer.php'; ?>
 </html>

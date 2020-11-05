@@ -1,9 +1,5 @@
 <?php
 
-//corps de page
-//include close.php;
-//footer
-//include footer.php;
 
 ?>
 <!doctype html>
@@ -21,7 +17,7 @@
 </head>
 
 <body>
-    <?php require ("../views/block/nav.php"); ?>
+    <?php require("../views/block/nav.php"); ?>
     <?php require ('../src/deconnection.php'); ?>
 
 </body>
