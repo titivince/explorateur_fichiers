@@ -19,7 +19,7 @@ $user = $query->fetchAll();
 <head>
     <meta charset="utf-8">
     <title>Explorateur de fichier</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../public/assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
@@ -30,11 +30,11 @@ $user = $query->fetchAll();
         <table class="table">
 
             <tr class="table-header">
-                <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Nom du fichier</th>
-                <th><span class="icon"><img src="../assets/icon/collapse-arrow-48.png" alt=""></span>Taille du fichier
+                <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Nom du fichier</th>
+                <th><span class="icon"><img src="../public/assets/icon/collapse-arrow-48.png" alt=""></span>Taille du fichier
                 </th>
-                <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Ajouter le</th>
-                <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Actions</th>
+                <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Ajouter le</th>
+                <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Actions</th>
             </tr>
 
 

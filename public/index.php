@@ -2,6 +2,8 @@
 
 require '../vendor/autoload.php';
 
+
+
 $router = new AltoRouter();
 
 //define('VIEW_PATCH', dirname(__DIR__).'/views');
