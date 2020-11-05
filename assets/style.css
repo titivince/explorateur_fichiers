@@ -389,7 +389,7 @@ footer {
     box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
-.success span{
+.success .success-login {
     text-transform: uppercase;
 }
 

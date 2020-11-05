@@ -29,5 +29,3 @@ if (isset($_GET['pseudo'])) {
 }
 
 require ('../views/page_login.php');
-
-

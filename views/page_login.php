@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="FR-fr">
 
@@ -11,25 +10,27 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
-    <body>
 
-        <form class="box" method="GET" action="../src/login_success.php">
+<body>
 
-            <!-- Crée un compte Admin + User et indiquer ici les logs -->
-            <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
-            <p>Commentaire dans le code sources à modifier !</p>
+    <form class="box" method="GET" action="../src/login_success.php">
 
-            <h1>Connexion</h1>
-            <!-- Changer le name pour la BDD -->
-            <input type="text" name="pseudo" placeholder="Pseudo">
-            <input type="password" name="password" placeholder="Mot de passe">
-            <input type="submit" value="Connexion">
+        <!-- Crée un compte Admin + User et indiquer ici les logs -->
+        <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
+        <p>Commentaire dans le code sources à modifier !</p>
 
-            <a class="signup" href="../src/inscription.php">Crée un compte</a>
+        <h1>Connexion</h1>
+        <!-- Changer le name pour la BDD -->
+        <input type="text" name="pseudo" placeholder="Pseudo">
+        <input type="password" name="password" placeholder="Mot de passe">
+        <input type="submit" value="Connexion">
 
-        </form>
-        <?php if(isset($valid)){
+        <a class="signup" href="../src/inscription.php">Crée un compte</a>
+
+    </form>
+    <?php if(isset($valid)){
             echo $valid;
         }  ?>
-    </body>
+</body>
+
 </html>

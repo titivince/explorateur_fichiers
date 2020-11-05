@@ -49,7 +49,7 @@ if (isset($_GET['pseudo'])) {
 <body>
     <div class="success">
         <div class="success-2">
-            <h1>Bienvenue <span><?= $valid = $_SESSION['pseudo'] ?></span></h1>
+            <h1>Bienvenue <span class="success-login"><?= $valid = $_SESSION['pseudo'] ?></span></h1>
             <h2>
                 <script language="JavaScript">
                 function t() {
