@@ -7,7 +7,6 @@
 
 body, html {
     background-color: #202020;
-    overflow: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -54,12 +53,15 @@ nav ul div.items {
 
 nav ul div.items li {
     background: none;
+    margin-top: 15px;
 }
 
 nav ul div.items a {
+    line-height: 40px;
     text-decoration: none;
     font-size: 18px;
-    padding: 0 12px;
+    padding: 0 40px;
+    margin-top: 20px;
     background: none;
 }
 
@@ -357,10 +359,6 @@ th {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 1em rgb(255, 255, 255);
-}
-
-.table-header{
-    
 }
 
 /* FIN DU CSS POUR EXPLORATEUR */
