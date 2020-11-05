@@ -7,13 +7,13 @@
 
 body, html {
     background-color: #202020;
-    overflow: scroll; 
+    overflow: scroll;
 }
 
-::-webkit-scrollbar { 
-    width: 0px; 
+::-webkit-scrollbar {
+    width: 0px;
     background: transparent;
-} 
+}
 
 .main-footer {
     position: absolute;
@@ -97,13 +97,12 @@ nav ul .search-icon input {
     border: none;
     outline: none;
     padding: 0 10px;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 16px;
     border-radius: 5px 0 0 5px;
 }
 
 nav ul .search-icon .icon {
-    height: 100%;
     width: 40px;
     line-height: 40px;
     text-align: center;
@@ -350,7 +349,7 @@ th {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
@@ -368,11 +367,30 @@ footer {
     box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
-.card-header {
-}
+.card-header {}
 
 .card-body, .card-title, .card-text, .btn, .btn-primary {
     padding: 5px;
 }
 
 /* FIN DU CSS POUR FOOTER */
+
+/* CSS LOGIN / REGISTER */
+
+.success {
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+.success span{
+    text-transform: uppercase;
+}
+
+/* FIN CSS LOGIN / REGISTER */

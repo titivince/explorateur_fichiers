@@ -15,14 +15,14 @@
                     <option value="#">$Pseudo</option> <!-- Liens vers le profil -->
                     <option value="#">2</option>
                     <option value="#">3</option>
-                    <option class="deconnexion" value="../../src/deconnection.php">Déconnexion</option>
+                    <option class="deconnexion" value="../src/deconnection.php">Déconnexion</option>
                 </select>
             </li>
         </div>
         <li class="search-icon">
             <input type="search" placeholder="Rechercher">
             <label class="icon">
-                <span class="fas fa-search" style="background: none;"></span>
+                <span class="fas fa-search" style="background: none;line-height: 40px;"></span>
             </label>
         </li>
     </ul>
