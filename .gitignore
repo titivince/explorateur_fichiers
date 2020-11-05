@@ -1,5 +1,7 @@
 .idea
-.idea/vcs.xml
-.idea/explorateur.iml
-.idea/modules.xml
-.idea/workspace.xml
+
+projectexplorer.sql
+
+create_bdd_user
+
+vendor
