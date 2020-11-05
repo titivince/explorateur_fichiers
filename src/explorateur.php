@@ -19,26 +19,26 @@ $user = $query->fetchAll();
 <head>
     <meta charset="utf-8">
     <title>Explorateur de fichier</title>
-    <link rel="stylesheet" href="../public/assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 
 <body>
 
-    <div class="explorateur">
-        <table class="table">
+<div class="explorateur">
+    <table class="table">
 
-            <tr class="table-header">
-                <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Nom du fichier</th>
-                <th><span class="icon"><img src="../public/assets/icon/collapse-arrow-48.png" alt=""></span>Taille du fichier
-                </th>
-                <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Ajouter le</th>
-                <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Actions</th>
-            </tr>
+        <tr class="table-header">
+            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Nom</th>
+            <th><span class="icon"><img src="../assets/icon/collapse-arrow-48.png" alt=""></span>Taille</th>
+            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Ajouter le</th>
+            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Description</th>
+            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Actions</th>
+        </tr>
 
 
-            <?php foreach ($user as $item): ?>
+        <?php foreach ($user as $item): ?>
 
             <div>
                 <tr>
@@ -46,16 +46,17 @@ $user = $query->fetchAll();
                     <td><?php echo  $item["name"] ?></td>
                     <td><?php echo  $item["first_name"] ?></td>
                     <td><?php echo  $item["pseudo"] ?></td>
+                    <td><?php echo  $item["email"] ?></td>
                     <td><a class="delete" href="delete.php?lign_delete=<?= intval($item['id']) ?>">Supprimer</a>
-                        <a class="update" href="form_of_modif.php?ligne_update=<?= intval($item['id']) ?> ">modifier</a>
+                        <a class="update" href="form_of_modif.php?ligne_update=<?= intval($item['id']) ?> ">Modifier</a>
                     </td>
 
                 </tr>
 
             </div>
-            <?php endforeach ?>
-        </table>
-    </div>
+        <?php endforeach ?>
+    </table>
+</div>
 
 
 </body>
