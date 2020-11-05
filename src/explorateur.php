@@ -19,7 +19,7 @@ $user = $query->fetchAll();
 <head>
     <meta charset="utf-8">
     <title>Explorateur de fichier</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../public/assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
@@ -30,11 +30,11 @@ $user = $query->fetchAll();
     <table class="table">
 
         <tr class="table-header">
-            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Nom</th>
-            <th><span class="icon"><img src="../assets/icon/collapse-arrow-48.png" alt=""></span>Taille</th>
-            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Ajouter le</th>
-            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Description</th>
-            <th><span class="icon"><img src="../assets/icon/folder-48.png" alt=""></span>Actions</th>
+            <th><span class="icon"><img src="../public/assets/icon/folder-48.png" alt=""></span>Nom</th>
+            <th><span class="icon"><img src="../public/assets/icon/collapse-arrow-48.png" alt=""></span>Taille</th>
+            <th><span class="icon"><img src="../public/assets/icon/file-50.png" alt=""></span>Type</th>
+            <th><span class="icon"><img src="../public/assets/icon/date-to-48.png" alt=""></span>Ajouter le</th>
+            <th><span class="icon"><img src="../public/assets/icon/support-50.png" alt=""></span>Actions</th>
         </tr>
 
 
@@ -47,8 +47,8 @@ $user = $query->fetchAll();
                     <td><?php echo  $item["first_name"] ?></td>
                     <td><?php echo  $item["pseudo"] ?></td>
                     <td><?php echo  $item["email"] ?></td>
-                    <td><a class="delete" href="delete.php?lign_delete=<?= intval($item['id']) ?>">Supprimer</a>
-                        <a class="update" href="form_of_modif.php?ligne_update=<?= intval($item['id']) ?> ">Modifier</a>
+                    <td><a href="delete.php?lign_delete=<?= intval($item['id']) ?>"><img src="../public/assets/icon/remove-24.png" alt=""></a>
+                        <a class="update" href="edit.php?ligne_update=<?= intval($item['id']) ?> "><img src="../public/assets/icon/edit-24.png" alt=""></a>
                     </td>
 
                 </tr>

@@ -5,14 +5,7 @@
         <div class="items">
             <li><a href="#">Explorateur</a></li>
             <li><a href="#">Upload</a></li>
-            <li>
-                <select size="1" onChange="location = this.options[this.selectedIndex].value;">
-                    <option value="#">$Pseudo</option> <!-- Liens vers le profil -->
-                    <option value="#">2</option>
-                    <option value="#">3</option>
-                    <option class="deconnexion" value="../src/deconnection.php">Déconnexion</option>
-                </select>
-            </li>
+            <li><a class="deconnexion" href="../src/deconnection.php">Déconnexion</a></li>
         </div>
         <li class="search-icon">
             <input type="search" placeholder="Rechercher">
