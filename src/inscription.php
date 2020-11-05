@@ -3,29 +3,6 @@
 require_once('Connection.php');
 require('../views/block/nav.php');
 
-use App\Connection;
-
-$pdo = (new Connection())->getPdo();
-
-//dd($pdo);
-
-if (isset($_POST)) {
-
-
-    $name = $_POST["name"];
-    $first_name = $_POST["first_name"];
-    $pseudo = $_POST["pseudo"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-
-    $sql = "INSERT INTO `user`(`name`, `first_name`, `pseudo`, `email`, `password`) VALUES ('$name', '$first_name', '$pseudo', '$email', '$password')";
-
-    $pdo->exec($sql);
-
-}
-
-
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +16,7 @@ if (isset($_POST)) {
 </head>
 <body>
 
-<form class="box" method="POST">
+<form class="box" method="POST" action="form.php">
 
     <!-- Crée un compte Admin + User et indiquer ici les logs -->
     <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
