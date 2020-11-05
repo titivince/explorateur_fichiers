@@ -11,6 +11,8 @@ $router->map('GET','/login', function() {
     require __DIR__.'/../views/page_login.php';
 });
 
+
+
 //page qui informe déconnexion (à adapter au bouton je sais encore pas comment
 $router->map('GET','/deconnexion', function() {
     require __DIR__.'/../views/page_deconnexion_login.php';
@@ -20,6 +22,7 @@ $router->map('GET','/deconnexion', function() {
 $router->map('GET','/home', function() {
     require __DIR__.'/../views/home_after_login.php';
 });
+
 
 
 
