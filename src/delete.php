@@ -2,6 +2,7 @@
 
 require_once('Connection.php');
 require('../views/block/nav.php');
+require('../views/block/footer.php');
 
 use App\Connection;
 
@@ -32,7 +33,6 @@ $req->execute();
 
     <h1>Fichier bien supprimer !</h1>
     <h2>
-        Redirection dans
         <script language="JavaScript">
 
             function t() {
@@ -45,7 +45,7 @@ $req->execute();
                     if (s < 10) {
                         s = s
                     }
-                    compteur.innerHTML = s + " secondes"
+                    compteur.innerHTML = "Redirection dans " + s + " secondes"
                 }
                 duree = duree - 1;
                 window.setTimeout("t();", 999);
@@ -58,8 +58,6 @@ $req->execute();
             t();
         </script>
     </h2>
-
-    <?php require('../views/block/footer.php'); ?>
 
 </body>
 

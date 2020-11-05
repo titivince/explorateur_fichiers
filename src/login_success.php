@@ -4,26 +4,8 @@ require_once('Connection.php');
 require('../views/block/nav.php');
 require('../views/block/footer.php');
 
-use App\Connection;
-
-$pdo = (new Connection())->getPdo();
-
-    $name = $_POST["name"];
-    $first_name = $_POST["first_name"];
-    $pseudo = $_POST["pseudo"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-    $sql = "INSERT INTO `user`(`name`, `first_name`, `pseudo`, `email`, `password`) 
-    VALUES ('$name', '$first_name', '$pseudo', '$email', '$password')";
-
-    $pdo->exec($sql);
-
-echo "votre compte a bien été créer , vous aller être redirigé";
-
-header('refresh:5; url:home.php');
-
 ?>
+
 
 <!doctype html>
 <html lang="FR-fr">
@@ -38,6 +20,34 @@ header('refresh:5; url:home.php');
     <title>Connexion réussite</title>
 </head>
 <body>
+
+<h1>Connexion réussite !</h1>
+<h2>
+    <script language="JavaScript">
+
+        function t() {
+            var compteur = document.getElementById('compteur');
+            s = duree;
+            if (s < 0) {
+                compteur.innerHTML = ""
+            }
+            else {
+                if (s < 10) {
+                    s = s
+                }
+                compteur.innerHTML = "Redirection dans " + s + " secondes"
+            }
+            duree = duree - 1;
+            window.setTimeout("t();", 999);
+        }
+
+    </script>
+    <div id="compteur"></div>
+    <script language="JavaScript">
+        duree = "3";
+        t();
+    </script>
+</h2>
 
 </body>
 </html>

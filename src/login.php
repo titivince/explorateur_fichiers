@@ -1,6 +1,8 @@
 <?php
 
-require 'Connection.php';
+require_once('Connection.php');
+require('../views/block/nav.php');
+require('../views/block/footer.php');
 
 use App\Connection;
 

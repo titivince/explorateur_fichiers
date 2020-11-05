@@ -16,7 +16,7 @@ require('../views/block/nav.php');
 </head>
 <body>
 
-<form class="box" method="POST" action="form.php">
+<form class="box" method="POST" action="register_success.php">
 
     <!-- Crée un compte Admin + User et indiquer ici les logs -->
     <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
