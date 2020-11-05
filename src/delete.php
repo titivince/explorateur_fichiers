@@ -24,7 +24,7 @@ $req->execute();
 
 <head>
     <meta charset="utf-8">
-    <META http-equiv="refresh" content="3; URL=http://localhost/explorateur_fichiers/src/explorateur.php">
+    <META http-equiv="refresh" content="2; URL=http://localhost/explorateur_fichiers/src/explorateur.php">
     <title>Titre de la page</title>
     <link rel="stylesheet" href="../public/assets/style.css">
 </head>
@@ -39,7 +39,7 @@ $req->execute();
                 function t() {
                     var compteur = document.getElementById('compteur');
                     s = duree;
-                    if (s < 0) {
+                    if (s < 1) {
                         compteur.innerHTML = ""
                     } else {
                         if (s < 10) {
@@ -53,7 +53,7 @@ $req->execute();
                 </script>
                 <div id="compteur"></div>
                 <script language="JavaScript">
-                duree = "3";
+                duree = "2";
                 t();
                 </script>
             </h2>

@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "montserrat", sans-serif;
     color: #f2f2f2;
+    
 }
 
 body, html {
@@ -224,7 +225,7 @@ nav ul li.btn span.show:before {
     box-shadow: 0 0 1.5em #2ecc71;
 }
 
-.box h1 {
+.box .login, .box .registe {
     color: white;
     background: none;
     text-transform: uppercase;
@@ -400,3 +401,8 @@ footer {
 }
 
 /* FIN CSS LOGIN / REGISTER */
+
+/* BOX THEME */
+
+
+/* FIN DU BOX THEME */

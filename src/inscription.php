@@ -23,7 +23,7 @@ require_once('Connection.php');
         <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
         <p>Commentaire dans le code sources à modifier !</p>
 
-        <h1>Inscription</h1>
+        <h1 class="register">Inscription</h1>
         <input type="text" name="name" minlength="2" placeholder="Nom" required>
         <input type="text" name="first_name" minlength="2" placeholder="Prénom" required>
         <input type="text" name="pseudo" minlength="2" placeholder="Pseudo" required>

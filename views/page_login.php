@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Explorateur de fichier</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="../public/assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <?php include '../views/block/nav.php'; ?>
 
     <form class="box" method="GET" action="../src/login_success.php">
 
@@ -20,10 +19,10 @@
         <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
         <p>Commentaire dans le code sources à modifier !</p>
 
-        <h1>Connexion</h1>
+        <h1 class="login">Connexion</h1>
         <!-- Changer le name pour la BDD -->
-        <input type="text" name="pseudo" placeholder="Pseudo">
-        <input type="password" name="password" placeholder="Mot de passe">
+        <input type="text" name="pseudo" minlength="2" placeholder="Pseudo" required>
+        <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
         <input type="submit" value="Connexion">
 
         <a class="signup" href="../src/inscription.php">Crée un compte</a>
@@ -33,5 +32,4 @@
             echo $valid;
         }  ?>
 </body>
-    <?php include '../views/block/footer.php'; ?>
 </html>
