@@ -8,8 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <META http-equiv="refresh" content="2; URL=login">
     <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <title>Inscription réussite</title>
+    <title>Explorateur de fichier</title>
 
 </head>
 

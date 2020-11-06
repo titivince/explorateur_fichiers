@@ -2,6 +2,10 @@
 
 require '../vendor/autoload.php';
 
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+
 $uri = $_SERVER['REQUEST_URI'];
 
 $router = new AltoRouter();
@@ -13,6 +17,9 @@ $router->map('GET', '/login', 'login');
 $router->map('GET', '/inscription', 'inscription');
 
 $router->map('POST', '/register_success', 'register_success');
+
+$router->map('GET', '/login_success', 'login_success');
+
 
 $match = $router->match();
 if ($match !== null) {

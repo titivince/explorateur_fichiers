@@ -18,10 +18,10 @@ $user = $query->fetchAll();
 
 <head>
     <meta charset="utf-8">
-    <title>Explorateur de fichier</title>
-    <link rel="stylesheet" href="../public/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Explorateur de fichier</title>
 </head>
 
 <body>
