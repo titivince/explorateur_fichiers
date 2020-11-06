@@ -14,7 +14,7 @@
 
 <body>
 
-    <form class="box" method="GET" action="../src/login_success.php">
+    <form class="box" method="GET" action="login_success.php">
 
         <!-- Crée un compte Admin + User et indiquer ici les logs -->
         <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->

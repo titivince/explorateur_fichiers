@@ -6,9 +6,13 @@ $uri = $_SERVER['REQUEST_URI'];
 
 $router = new AltoRouter();
 
-$router->map('GET', '/', 'login');
+$router->map('GET', '/', 'home');
+
+$router->map('GET', '/login', 'login');
 
 $router->map('GET', '/inscription', 'inscription');
+
+$router->map('POST', '/register_success', 'register_success');
 
 $match = $router->match();
 if ($match !== null) {

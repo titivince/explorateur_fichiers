@@ -11,7 +11,7 @@
 
 <body>
 
-<form class="box" method="POST" action="register_success.php">
+<form class="box" method="POST" action="/register_success">
 
     <!-- Crée un compte Admin + User et indiquer ici les logs -->
     <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
