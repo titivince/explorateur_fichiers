@@ -2,38 +2,22 @@
 
 require '../vendor/autoload.php';
 
-
+$uri = $_SERVER['REQUEST_URI'];
 
 $router = new AltoRouter();
 
-//define('VIEW_PATCH', dirname(__DIR__).'/views');
+$router->map('GET', '/', 'login');
 
-//accueil pour se loger
-$router->map('GET','/login', function() {
-    require __DIR__.'/../views/page_login.php';
-});
-
-
-
-//page qui informe déconnexion (à adapter au bouton je sais encore pas comment
-$router->map('GET','/deconnexion', function() {
-    require __DIR__.'/../views/page_deconnexion_login.php';
-});
-
-//page home après s'être loger qui affichera l'explorateur de fichier
-$router->map('GET','/home', function() {
-    require __DIR__.'/../views/home_after_login.php';
-});
-
-
-
-
-
-//garde pour exemple
-/*$router->map('GET','/inscription', function() {
-require __DIR__.'/inscription.php';
-});*/
+$router->map('GET', '/inscription', 'inscription');
 
 $match = $router->match();
-//dd($match);
-$match['target']();
+if ($match !== null) {
+    require('../views/block/nav.php');
+    require('../views/block/footer.php');
+    if (is_callable($match['target'])) {
+        call_user_func($match['target'], $match['params']);
+    } else {
+        $params = $match['params'];
+        require "../src/{$match['target']}.php";
+    }
+}

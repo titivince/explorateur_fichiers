@@ -9,9 +9,9 @@ session_destroy();
 
 <head>
     <meta charset="utf-8">
-    <META http-equiv="refresh" content="3; URL=http://localhost/explorateur_fichiers/src/home.php">
+    <META http-equiv="refresh" content="3; URL=home">
     <title>Titre de la page</title>
-    <link rel="stylesheet" href="../public/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>

@@ -17,6 +17,8 @@ $pdo = (new Connection())->getPdo();
 
     $pdo->exec($sql);
 
+require ('../views/page_register.php');
+
 ?>
 
 <!doctype html>

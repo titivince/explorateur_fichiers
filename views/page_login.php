@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Explorateur de fichier</title>
-    <link rel="stylesheet" href="../public/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+
 
 <body>
 
@@ -25,7 +26,7 @@
         <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
         <input type="submit" value="Connexion">
 
-        <a class="signup" href="../src/inscription.php">Crée un compte</a>
+        <a class="signup" href="/inscription">Crée un compte</a>
 
     </form>
     <?php if(isset($valid)){
