@@ -12,19 +12,19 @@ $req = $pdo->prepare('SELECT * FROM user');
 $req->execute();
 
 $resultat = $req->fetchAll();
-if (isset($_GET['pseudo'])) {
+if (isset($_POST['pseudo'])) {
     foreach ($resultat as $list) {
-        if ($_GET['pseudo'] == $list['pseudo'] && $_GET['password'] == $list['password']) {
+        if ($_POST['pseudo'] === $list['pseudo'] && $_POST['password'] === $list['password']) {
 
             session_start();
             $_SESSION['id'] = $list['id'];
             $_SESSION['pseudo'] = $list['pseudo'];
 
-            $valid = 'Bienvenue ' . $_SESSION['pseudo'];
+            $valid = 'Bienvenue '.$_SESSION['pseudo'];
         } else {
             $valid = 'mauvais pseudo ou mot de passe ';
         }
     }
 }
 
-require('../views/page_login_success.php');
+require('success_login.php');

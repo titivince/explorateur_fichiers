@@ -16,13 +16,13 @@
     <H1>Page home !</H1>
 
     <h1>
-    <a href="explorateur.php">Page Explorateur</a>
+    <a href="/explorateur">Page Explorateur</a>
     <br>
-    <a href="delete.php">Page Delete</a>
+    <a href="/delete">Page Delete</a>
     <br>
-    <a href="../views/inscription.php">Page Inscription</a>
+    <a href="/inscription">Page Inscription</a>
     <br>
-    <a href="login.php">Page Login</a>
+    <a href="/login">Page Login</a>
     <br>
 
     

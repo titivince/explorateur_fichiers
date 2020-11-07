@@ -18,8 +18,11 @@ $router->map('GET', '/inscription', 'inscription');
 
 $router->map('POST', '/register_success', 'register_success');
 
-$router->map('GET', '/login_success', 'login_success');
+$router->map('POST', '/login_success', 'login_success');
 
+$router->map('GET', '/explorateur', 'explorateur');
+
+$router->map('GET', '/delete/lign_delete=[i:id]', 'delete'); // Je bloque sur celle ci j'arrive pas à lui atribuer l'ID
 
 $match = $router->match();
 if ($match !== null) {
