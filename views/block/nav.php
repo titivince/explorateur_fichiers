@@ -16,9 +16,9 @@
         <li class="logo">Les Codeur du Dimanche</li>
         <li class="btn"><span class="fas fa-bars"></span></li>
         <div class="items">
-            <li><a href="explorateur.php"><img src="/assets/icon/home-page-32.png" alt=""></a></li>
-            <li><a href="upload.php"><img src="/assets/icon/upload-32.png" alt=""></a></li>
-            <li><a href="deconnection.php"><img src="/assets/icon/logout-rounded-left-32.png" alt=""></a></li>
+            <li><a href="/explorateur"><img src="/assets/icon/home-page-32.png" alt=""></a></li>
+            <li><a href="/upload"><img src="/assets/icon/upload-32.png" alt=""></a></li>
+            <li><a href="/deconnexion"><img src="/assets/icon/logout-rounded-left-32.png" alt=""></a></li>
         </div>
         <li class="search-icon">
             <input type="search" placeholder="Rechercher">

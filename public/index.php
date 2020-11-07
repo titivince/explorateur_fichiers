@@ -12,6 +12,8 @@ $router = new AltoRouter();
 
 $router->map('GET', '/', 'home');
 
+$router->map('GET', '/home', 'home');
+
 $router->map('GET', '/login', 'login');
 
 $router->map('GET', '/inscription', 'inscription');
@@ -19,6 +21,8 @@ $router->map('GET', '/inscription', 'inscription');
 $router->map('POST', '/register_success', 'register_success');
 
 $router->map('POST', '/login_success', 'login_success');
+
+$router->map('GET', '/deconnexion', 'deconnexion');
 
 $router->map('GET', '/explorateur', 'explorateur');
 

@@ -11,8 +11,7 @@
 
 <body>
     <?php require("../views/block/nav.php"); ?>
-    <?php require ('../src/deconnection.php'); ?>
-
+    <?php require('../src/deconnexion.php'); ?>
 </body>
 
 </html>
