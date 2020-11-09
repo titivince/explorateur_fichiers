@@ -24,7 +24,7 @@
     <input type="email" name="email" placeholder="E-mail" required>
     <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
 
-    <input type="submit" name="" value="S'inscrire">
+    <button type="submit">S'inscrire</button>
 
     <a class="signin" href="login.php">Se connecter</a>
 
