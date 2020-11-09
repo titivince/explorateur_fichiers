@@ -24,7 +24,7 @@
         <!-- Changer le name pour la BDD -->
         <input type="text" name="pseudo" minlength="2" placeholder="Pseudo" required>
         <input type="password" name="password" minlength="8" placeholder="Mot de passe" required>
-        <input type="submit" value="Connexion">
+        <button type="submit">Se connecter</button>
 
         <a class="signup" href="/inscription">Crée un compte</a>
 

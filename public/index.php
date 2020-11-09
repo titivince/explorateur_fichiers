@@ -2,9 +2,9 @@
 
 require '../vendor/autoload.php';
 
-$whoops = new \Whoops\Run;
-$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-$whoops->register();
+//$whoops = new \Whoops\Run;
+//$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+//$whoops->register();
 
 $uri = $_SERVER['REQUEST_URI'];
 

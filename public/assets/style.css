@@ -254,7 +254,7 @@ nav ul li.btn span.show:before {
     font-size: 1em;
 }
 
-.box input[type="submit"] {
+.box button[type="submit"] {
     border: 0;
     background: none;
     display: block;
@@ -269,7 +269,7 @@ nav ul li.btn span.show:before {
     cursor: pointer;
 }
 
-.box input[type="submit"]:hover {
+.box button[type="submit"]:hover {
     background-color: #2ecc71;
 }
 
