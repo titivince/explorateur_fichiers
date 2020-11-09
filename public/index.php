@@ -10,13 +10,18 @@ require '../vendor/autoload.php';
 
 $uri = $_SERVER['REQUEST_URI'];
 
+if ($uri=== '/login') {
+    require '../views/page_login.php';
+}
+else {
+
 $router = new AltoRouter();
 
 $router->map('GET', '/', 'home');
 
 $router->map('GET', '/home', 'home');
 
-$router->map('GET', '/login', 'login');
+//$router->map('GET', '/login', 'login');
 
 $router->map('GET', '/inscription', 'inscription');
 
@@ -31,6 +36,8 @@ $router->map('GET', '/explorateur', 'explorateur');
 $router->map('GET', '/delete/lign_delete=[i:id]', 'delete'); // Je bloque sur celle ci j'arrive pas à lui atribuer l'ID
 
 $match = $router->match();
+
+($match);
 if ($match !== null) {
     require('../views/block/nav.php');
     require('../views/block/footer.php');
@@ -40,4 +47,5 @@ if ($match !== null) {
         $params = $match['params'];
         require "../src/{$match['target']}.php";
     }
+}
 }

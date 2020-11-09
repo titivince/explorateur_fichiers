@@ -10,7 +10,7 @@ $pdo = (new Connection())->getPdo();
 
 $req = $pdo->prepare('SELECT * FROM user');
 $req->execute();
-dd($pdo);
+//dd($pdo);
 $resultat = $req->fetchAll();
 if (isset($_POST['pseudo'])) {
     foreach ($resultat as $list) {
