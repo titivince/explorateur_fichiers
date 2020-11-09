@@ -6,11 +6,11 @@ require ('Connection.php');
 use App\Connection;
 
 $pdo = (new Connection())->getPdo();
-//dd($pdo);
+
 
 $req = $pdo->prepare('SELECT * FROM user');
 $req->execute();
-
+dd($pdo);
 $resultat = $req->fetchAll();
 if (isset($_POST['pseudo'])) {
     foreach ($resultat as $list) {
@@ -24,7 +24,6 @@ if (isset($_POST['pseudo'])) {
         } else {
             $valid = 'mauvais pseudo ou mot de passe ';
         }
-    }
-}
+    }}
 
 require('success_login.php');

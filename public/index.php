@@ -6,6 +6,8 @@ require '../vendor/autoload.php';
 //$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 //$whoops->register();
 
+//phpinfo();
+
 $uri = $_SERVER['REQUEST_URI'];
 
 $router = new AltoRouter();
