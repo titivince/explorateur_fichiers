@@ -10,8 +10,10 @@ require '../vendor/autoload.php';
 
 $uri = $_SERVER['REQUEST_URI'];
 
-if ($uri=== '/login') {
+if ($uri === '/login') {
     require '../views/page_login.php';
+} elseif ($uri === '/inscription') {
+    require '../views/page_register.php';
 }
 else {
 
@@ -20,10 +22,6 @@ $router = new AltoRouter();
 $router->map('GET', '/', 'home');
 
 $router->map('GET', '/home', 'home');
-
-//$router->map('GET', '/login', 'login');
-
-$router->map('GET', '/inscription', 'inscription');
 
 $router->map('POST', '/register_success', 'register_success');
 
