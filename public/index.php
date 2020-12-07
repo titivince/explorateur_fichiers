@@ -2,48 +2,21 @@
 
 require '../vendor/autoload.php';
 
-//$whoops = new \Whoops\Run;
-//$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-//$whoops->register();
+use Whoops\Handler\PrettyPageHandler;
+use Whoops\Run;
 
-//phpinfo();
+$whoops = new Run;
+$whoops->pushHandler(new PrettyPageHandler);
+$whoops->register();
 
-$uri = $_SERVER['REQUEST_URI'];
-
-if ($uri === '/login') {
-    require '../views/page_login.php';
-} elseif ($uri === '/inscription') {
-    require '../views/page_register.php';
-}
-else {
-
-$router = new AltoRouter();
-
-$router->map('GET', '/', 'home');
-
-$router->map('GET', '/home', 'home');
-
-$router->map('POST', '/register_success', 'register_success');
-
-$router->map('POST', '/login_success', 'login_success');
-
-$router->map('GET', '/deconnexion', 'deconnexion');
-
-$router->map('GET', '/explorateur', 'explorateur');
-
-$router->map('GET', '/delete/lign_delete=[i:id]', 'delete'); // Je bloque sur celle ci j'arrive pas à lui atribuer l'ID
-
-$match = $router->match();
-
-($match);
-if ($match !== null) {
-    require('../views/block/nav.php');
-    require('../views/block/footer.php');
-    if (is_callable($match['target'])) {
-        call_user_func($match['target'], $match['params']);
-    } else {
-        $params = $match['params'];
-        require "../src/{$match['target']}.php";
-    }
-}
-}
+$router = new App\Router(dirname(__DIR__).'/views');
+$router
+    ->get('/', 'page_explorateur', '/')
+    ->get('/home', 'page_explorateur', 'home')
+    ->match('/login', 'page_login', 'login')
+    ->match('/login_success', 'page_login_success', 'login_success')
+    ->match('/register', 'page_register', 'register')
+    ->match('/register', 'page_register_success', 'register_success')
+    ->match('/upload', 'page_upload', 'upload')
+    ->get('/deconnexion', 'page_deconnexion', 'deconnexion')
+    ->run();

@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="FR-fr">
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <title>Explorateur de fichier</title>
-</head>
 
-<body>
-
-<form class="box" method="POST" action="/register_success">
+<form class="box" method="POST" action="<?php $router->url('register_success') ?>">
 
     <!-- Crée un compte Admin + User et indiquer ici les logs -->
     <!-- <p>Admin : admin + admin <br>//<br> User : user + user</p>-->
@@ -26,10 +15,4 @@
 
     <button type="submit">S'inscrire</button>
 
-    <a class="signin" href="login.php">Se connecter</a>
-
-</form>
-
-</body>
-
-</html>
+    <a class="signin" href="<?php $router->url('register_success') ?>">Se connecter</a>

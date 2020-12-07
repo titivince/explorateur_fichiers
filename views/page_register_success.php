@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang="FR-fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <META http-equiv="refresh" content="2; URL=login">
-    <link rel="stylesheet" href="/assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <title>Explorateur de fichier</title>
-
-</head>
-
-<body>
 <div class="success">
     <div class="success-2">
         <h1><span>Votre compte à bien été crée !</span></h1>
@@ -43,7 +27,3 @@
         </h2>
     </div>
 </div>
-
-</body>
-
-</html><?php
